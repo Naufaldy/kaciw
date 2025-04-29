@@ -5,20 +5,24 @@
   <title>HAIIIII 💖</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background-image: url('romantis.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      min-height: 100vh;
       font-family: 'Poppins', sans-serif;
       color: pink;
       text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+      background-image: url('romantis.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 20px;
     }
 
     h1 {
@@ -33,8 +37,11 @@
       font-weight: 400;
       max-width: 600px;
       text-align: center;
-      padding: 0 20px;
       animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    audio {
+      margin-top: 2rem;
     }
 
     @keyframes fadeIn {
@@ -44,16 +51,19 @@
   </style>
 </head>
 <body>
-  <h1>Hai, RATUUUU 🌷</h1>
-  <p>akan ada satu orang yang akan tulus mencintaimu, menerima setiap apapun yang ada didalam dirimu.
-    akan ada satu orang yang akan bersedia menjadi temanmu, teman hidupmu, teman tumbuhmu yang baik untuk setiap apapun mimpi-mimpi dimasa depanmu. akan ada satu orang yang akan dengan setianya menjadi pendampingmu, setia menjadi pendengar cerita-cerita mu dan setia menjadi datang dan memberimu pembuktian bahwa cinta tidak hanya sebatas kata-kata manis melainkan banyak janji tetapi bukti. akan ada satu orang yang sepertimu pantas mendapatkannya.
-    penyemangatmu. akan ada satu orang yang
-    membuktikan dengan perbuatan yang nyata, tanpa
-    membuat mu percaya bahwa cinta baik yang
-    terpeluk tulus itu masih ada dan seseorang .</p>
-
-  <audio autoplay loop controls>  <source src="ha.mp3" type="audio/mpeg">
-    Browsermu tidak mendukung audio 💔
-  </audio>
+  <div class="container">
+    <h1>Hai, RATUUUU 🌷</h1>
+    <p>
+      Akan ada satu orang yang akan tulus mencintaimu, menerima setiap apapun yang ada didalam dirimu.
+      Akan ada satu orang yang akan bersedia menjadi temanmu, teman hidupmu, teman tumbuhmu yang baik untuk setiap apapun mimpi-mimpi dimasa depanmu.
+      Akan ada satu orang yang akan dengan setianya menjadi pendampingmu, setia menjadi pendengar cerita-cerita mu dan setia menjadi datang dan memberimu pembuktian bahwa cinta tidak hanya sebatas kata-kata manis melainkan banyak janji tetapi bukti.
+      Akan ada satu orang yang sepertimu pantas mendapatkannya.
+      Penyemangatmu. Akan ada satu orang yang membuktikan dengan perbuatan yang nyata, tanpa membuat mu percaya bahwa cinta baik yang terpeluk tulus itu masih ada dan seseorang.
+    </p>
+    <audio autoplay loop controls>
+      <source src="ha.mp3" type="audio/mpeg">
+      Browsermu tidak mendukung audio 💔
+    </audio>
+  </div>
 </body>
 </html>
